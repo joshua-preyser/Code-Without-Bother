@@ -1,36 +1,65 @@
-type LoginCredential struct {
-	Email    string `json:"email"`
-	SiteId   string `json:"siteId"`
-	UserId   string `json:"userId"`
-	Password string `json:"password"`
-}
+public class Employee {
 
-type LoginStatus struct {
-	Status string `json:"status"`
-}
+    private String email, firstName, lastName;
 
-type PasswordChangeCredentials struct {
-	Email       string `json:"email"`
-	UserId      string `json:"userId"`
-	OldPassword string `json:"oldPassword"`
-	NewPassword string `json:"newPassword"`
-}
+    private Employee(){}
 
-type Profile struct {
-	Email  string `json:"email"`
-	SiteId string `json:"siteId"`
-	UserId string `json:"userId"`
-}
+    public Employee(Builder builder) {
+        this.email = builder.email;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
 
-type ResetToken struct {
-	Resetokenvalue string `json:"resetokenvalue"`
-	UserId         string `json:"userId"`
-}
+    }
 
-type UserLoginToken struct {
-	SiteId     string    `json:"siteId"`
-	UserId     string    `json:"userId"`
-	Id         string    `json:"id"`
-	ExpiryDate time.Time `json:"expiryDate"`
-	TokenValue string    `json:"tokenValue"`
-	Message    string    `json:"message"`
+    public String getEmail() {
+        return email;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "email='" + email + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    public static class Builder{
+        private String email, firstName, lastName;
+
+        public Builder email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Builder firstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public Builder lastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public Builder copy(Employee employee) {
+            this.email = employee.email;
+            this.firstName = employee.firstName;
+            this.lastName = employee.lastName;
+
+            return this;
+        }
+
+        public Employee build() {
+            return new Employee(this);
+        }
+    }
+}
