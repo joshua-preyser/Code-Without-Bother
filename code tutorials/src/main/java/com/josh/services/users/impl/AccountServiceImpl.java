@@ -1,54 +1,39 @@
+public class CourseServiceImpl implements CourseService {
 
-public class AccountServiceImplTest {
+    private static CourseServiceImpl service = null;
+    private CourseRepository repository;
 
-    private AccountServiceImpl repository;
-    private Account account;
-
-    private Account getSaved(){
-        return this.repository.getAll().iterator().next();
+    private CourseServiceImpl() {
+        this.repository = CourseRepositoryImpl.getRepository();
     }
 
-    @Before
-    public void setUp() throws Exception {
-        this.repository = AccountRepositoryImpl.getRepository();
-        this.account = AccountFactory.buildAccount("Application Development Practice 3");
+    public static CourseServiceImpl getService(){
+        if (service == null) service = new CourseServiceImpl();
+        return service;
     }
 
-    @Test
-    public void a_create() {
-        Account created = this.repository.create(this.account);
-        System.out.println("In create, created = " + created);
-        Assert.assertNotNull(created);
-        Assert.assertSame(created, this.account);
+    @Override
+    public Course create(Course course) {
+        return this.repository.create(course);
     }
 
-    @Test
-    public void c_update() {
-        String newSiteName = "Udemy";
-        Account updated = new account.Builder().copy(getSaved()).SiteName(newSiteName).build();
-        System.out.println("In update, updated = " + updated);
-        this.repository.update(updated);
-        Assert.assertSame(newSiteName, updated.getSiteName());
+    @Override
+    public Course update(Course course) {
+        return this.repository.update(course);
     }
 
-    @Test
-    public void e_delete() {
-        Account saved = getSaved();
-        this.repository.delete(saved.getSiteId());
-        d_getAll();
+    @Override
+    public void delete(String s) {
+        this.repository.delete(s);
     }
 
-    @Test
-    public void b_read() {
-        Account saved = getSaved();
-        Account read = this.repository.read(saved.getSiteId());
-        System.out.println("In read, read = "+ read);
-        Assert.assertSame(read, saved);
+    @Override
+    public Course read(String s) {
+        return this.repository.read(s);
     }
 
-    @Test
-    public void d_getAll() {
-        Set<Account> accounts = this.repository.getAll();
-        System.out.println("In getall, all = " + accounts);
+    @Override
+    public Set<Course> getAll() {
+        return this.repository.getAll();
     }
 }
