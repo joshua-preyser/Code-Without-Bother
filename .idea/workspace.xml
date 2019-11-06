@@ -2,16 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21a638a-5545-4a60-8424-1c41f01c1e19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Code-Without-Bother.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code tutorials/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/AccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/RegistrationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/UserPasswordFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/UserRoleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/UserStatusFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/RegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/UserPasswordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/UserStatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/AccountRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/RegistrationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/UserPasswordRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/UserRoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/UserStatusRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/UserPasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/UserStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/RegistrationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/UserPasswordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/UserRoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/UserStatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/util/Misc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/AccountFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/RegistrationFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/UserFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/UserPasswordFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/UserRoleFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/UserStatusFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/AccountRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/RegistrationRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/UserPasswordRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/UserRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/UserRoleRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/UserStatusRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/AccountServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/RegistrationServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/UserPasswordServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/UserRoleRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/UserServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/UserStatusServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserStatus.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,34 +71,297 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" lean-forward="true" selection-end-line="65" />
+              <folding>
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#956#957#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="22" lean-forward="true" selection-end-line="138" />
+              <folding>
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+                <element signature="e#1669#1670#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserPassword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1170#1171#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#3383#3384#0" expanded="true" />
+                <element signature="e#3428#3429#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserRole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="joshua-preyser" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Code-Without-Bother" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/Account.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/util/Misc.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/AccountFactory.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/IRepository.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/AccountRepository.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/AccountRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/IService.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/AccountService.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/AccountFactoryTest.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/AccountRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Registration.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserStatus.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/User.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserPassword.java" />
+        <option value="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserRole.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1280" />
+    <option name="y" value="-1" />
+    <option name="width" value="1280" />
+    <option name="height" value="1024" />
+  </component>
   <component name="ProjectId" id="1TCKYg2hjIlDrnMHYU4LAXIw3LU" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="josh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="josh" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="josh" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Without-Bother" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Without-Bother" type="462c0819:PsiDirectoryNode" />
+              <item name="code tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="josh" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code tutorials/src/test/java/com/josh" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code tutorials/src/test/java/com/josh" />
-      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services" />
-      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository" />
-      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/controllers" />
-      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory" />
+      <recent name="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users" />
+      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users" />
+      <recent name="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users" />
+      <recent name="$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users" />
+      <recent name="$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,8 +387,47 @@
       <option name="presentableId" value="Default" />
       <updated>1572958687005</updated>
       <workItem from="1572958688333" duration="1548000" />
+      <workItem from="1572964614878" duration="12782000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12782000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1280" y="-1" width="1280" height="1024" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30956239" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -86,10 +437,220 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/util/Misc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#59#60#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/factory/users/AccountFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/AccountRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/IService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/test/java/com/josh/services/users/AccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/repository/users/impl/AccountRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/test/java/com/josh/factory/users/AccountFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/test/java/com/josh/repository/users/AccountRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/services/users/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-end-line="65" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="22" lean-forward="true" selection-end-line="138" />
+          <folding>
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3428#3429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code tutorials/src/main/java/com/josh/domain/users/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
