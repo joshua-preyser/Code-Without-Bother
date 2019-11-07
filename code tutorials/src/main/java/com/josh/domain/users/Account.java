@@ -1,3 +1,5 @@
+package com.josh.domain.users;
+
 public class Account {
 
     private String SiteId, Email, UserId, SiteName;
@@ -9,7 +11,7 @@ public class Account {
         this.SiteId = builder.SiteId;
         this.Email = builder.Email;
         this.SiteName = builder.SiteName;
-        this.UserId = builder.UserId
+        this.UserId = builder.UserId;
     }
 
     public String getSiteId() {
@@ -60,6 +62,6 @@ public class Account {
             return new Account(this);
         }
 
-    }
-
+    }         
+}
 

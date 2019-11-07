@@ -1,4 +1,5 @@
-
+package com.josh.factory.users;
+import com.josh.domain.users;
 
 public class AccountFactory {
 

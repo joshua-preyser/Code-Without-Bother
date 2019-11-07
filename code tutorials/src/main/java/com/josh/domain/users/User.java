@@ -1,9 +1,11 @@
+package com.josh.domain.users;
 
+import java.util.Date;
 
 public class User {
 
     private String SiteId, Email, UserId, SiteName, ScreenName, FirstName, MiddleName, LastName, Password;
-    private Time DateCreated;
+    private Date DateCreated;
 
 
     private User() {
@@ -61,7 +63,7 @@ public class User {
     public static class Builder {
 
         private String SiteId, Email, UserId, SiteName, ScreenName, FirstName, MiddleName, LastName, Password;
-        private Time DateCreated;
+        private Date DateCreated;
 
         public Builder SiteId(String SiteId) {
             this.SiteId = SiteId;

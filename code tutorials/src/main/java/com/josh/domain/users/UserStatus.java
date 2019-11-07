@@ -1,23 +1,15 @@
+package com.josh.domain.users;
 
-type UserStatus struct {
-	UserId string `json:"userId"`
-	Date   string `json:"date"`
-	Status string `json:"status"`
-}
-
-
-
-
-public class UserPassword {
+public class UserStatus {
 
     private String UserId, Date, Status;
 
 
 
-    private User() {
+    private UserStatus() {
     }
 
-    private User(Builder builder) {
+    private UserStatus(Builder builder) {
         this.UserId = builder.UserId;
         this.Date = builder.Date;
         this.Status = builder.Status;
@@ -57,7 +49,7 @@ public class UserPassword {
         }
 
 
-        public Builder copy(User user) {
+        public Builder copy(UserStatus user) {
             this.UserId = user.UserId;
             this.Date = user.Date;
             this.Status = user.Status;
@@ -65,8 +57,8 @@ public class UserPassword {
             return this;
         }
 
-        public User build() {
-            return new User(this);
+        public UserStatus build() {
+            return new UserStatus(this);
         }
 
     }

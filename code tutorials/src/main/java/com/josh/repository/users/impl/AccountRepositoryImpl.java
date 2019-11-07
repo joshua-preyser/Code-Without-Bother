@@ -1,4 +1,5 @@
-
+package com.josh.repository.users.impl;
+import com.josh.repository.users.AccountRepository
 
 public class AccountRepositoryImpl implements AccountRepository {
 

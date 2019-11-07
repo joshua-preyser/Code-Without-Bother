@@ -1,4 +1,4 @@
-
+package com.josh.domain.users;
 
 public class Registration {
 
@@ -48,5 +48,6 @@ public class Registration {
         }
 
     }
+}
 
 

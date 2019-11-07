@@ -1,6 +1,6 @@
+package com.josh.domain.users;
 
-
-public class UserPassword {
+public class UserRole {
 
     private String UserId, Date, RoleId;
 
