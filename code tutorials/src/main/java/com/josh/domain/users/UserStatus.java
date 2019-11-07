@@ -1,20 +1,12 @@
 
-type UserStatus struct {
-	UserId string `json:"userId"`
-	Date   string `json:"date"`
-	Status string `json:"status"`
-}
 
-
-
-
-public class UserPassword {
+public class UserStatus {
 
     private String UserId, Date, Status;
 
 
 
-    private User() {
+    private UserStatus() {
     }
 
     private User(Builder builder) {
