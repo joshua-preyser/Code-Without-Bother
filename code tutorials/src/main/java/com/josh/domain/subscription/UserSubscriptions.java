@@ -1,14 +1,4 @@
-type UserSubscriptions struct {
-	SiteId         string    `json:"siteUserId"`
-	UserUserId         string    `json:"userUserId"`
-	UserId             string    `json:"id"`
-	SubscriptionUserId string    `json:"subscriptionUserId"`
-	TokenId     string    `json:"tokenId"`
-	StartDate      time.Time `json:"startDate"`
-	EndDate        time.Time `json:"endDate"`
-}
-
-
+package com.josh.domain.subscription;
 
 public class SiteSubscription {
 

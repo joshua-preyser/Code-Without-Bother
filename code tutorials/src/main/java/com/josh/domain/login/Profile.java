@@ -1,8 +1,4 @@
-type Profile struct {
-	Email  string `json:"email"`
-	SiteId string `json:"siteId"`
-	UserId string `json:"userId"`
-}
+package com.josh.domain.rlogin;
 
 public class Profile {
 

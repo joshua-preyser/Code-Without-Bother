@@ -1,3 +1,4 @@
+package com.josh.domain.subscription;
 
 public class UserSubscriptions {
 

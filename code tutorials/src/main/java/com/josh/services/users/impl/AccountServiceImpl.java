@@ -1,39 +1,44 @@
-public class CourseServiceImpl implements CourseService {
+package com.josh.services.users.impl;
+import com.josh.services.users.AccountService;
+import com.josh.repository.users.impl.AccountRepositoryImpl;
+import com.josh.repository.users.AccountRepository;
 
-    private static CourseServiceImpl service = null;
-    private CourseRepository repository;
+public class AccountServiceImpl implements AccountService {
 
-    private CourseServiceImpl() {
-        this.repository = CourseRepositoryImpl.getRepository();
+    private static AccountServiceImpl service = null;
+    private AccountRepository repository;
+
+    private AccountServiceImpl() {
+        this.repository = AccountRepositoryImpl.getRepository();
     }
 
-    public static CourseServiceImpl getService(){
-        if (service == null) service = new CourseServiceImpl();
+    public static AccountServiceImpl getService(){
+        if (service == null) service = new AccountServiceImpl();
         return service;
     }
 
     @Override
-    public Course create(Course course) {
-        return this.repository.create(course);
+    public Account create(Account account) {
+        return this.repository.create(account);
     }
 
     @Override
-    public Course update(Course course) {
-        return this.repository.update(course);
+    public Account update(Account account) {
+        return this.repository.update(account);
     }
 
     @Override
-    public void delete(String s) {
-        this.repository.delete(s);
+    public void delete(String siteId) {
+        this.repository.delete(siteId);
     }
 
     @Override
-    public Course read(String s) {
-        return this.repository.read(s);
+    public Account read(String siteId) {
+        return this.repository.read(siteId);
     }
 
     @Override
-    public Set<Course> getAll() {
+    public Set<Account> getAll() {
         return this.repository.getAll();
     }
 }

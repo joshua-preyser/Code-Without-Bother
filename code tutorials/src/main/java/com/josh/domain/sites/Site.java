@@ -1,9 +1,4 @@
-type Site struct {
-	SiteId         string `json:"siteId"`
-	SiteName       string `json:"siteName"`
-	SiteUrl        string `json:"siteUrl"`
-	SiteAdminSiteAdminEmail string `json:"siteAdminSiteAdminEmail"`
-}
+package com.josh.domain.sites;
 
 public class Site {
 

@@ -1,4 +1,4 @@
-
+package com.josh.domain.role;
 
 public class RolePool {
 

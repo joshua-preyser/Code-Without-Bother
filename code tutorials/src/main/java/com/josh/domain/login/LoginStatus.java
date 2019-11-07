@@ -1,6 +1,4 @@
-type LoginStatus struct {
-	Status string `json:"status"`
-}
+package com.josh.domain.login;
 
 public class LoginStatus {
 
