@@ -1,3 +1,12 @@
+package com.josh.services.users;
+import org.junit.Assert;
+import org.junit.Test;
+import java.util.Set;
+import com.josh.domain.users.Account;
+import com.josh.factory.users.AccountFactory;
+import com.josh.repository.users.impl.AccountRepositoryImpl;
+import com.josh.service.users.impl.AccountServiceImpl;
+import org.junit.Before;
 
 public class AccountServiceImplTest {
 
@@ -49,6 +58,6 @@ public class AccountServiceImplTest {
     @Test
     public void d_getAll() {
         Set<Account> accounts = this.repository.getAll();
-        System.out.println("In getall, all = " + accounts);
+        System.out.println("In getAll, all = " + accounts);
     }
 }

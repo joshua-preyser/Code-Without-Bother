@@ -1,4 +1,8 @@
-
+package com.josh.factory.users;
+import com.josh.domain.users.Account;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 public class AccountFactoryTest {
 

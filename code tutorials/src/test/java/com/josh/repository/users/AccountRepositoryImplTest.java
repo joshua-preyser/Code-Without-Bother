@@ -1,6 +1,11 @@
-
-
-
+package com.josh.repository.users;
+import org.junit.Assert;
+import org.junit.Test;
+import java.util.Set;
+import com.josh.domain.users.Account;
+import com.josh.factory.users.AccountFactory;
+import com.josh.repository.users.impl.AccountRepositoryImpl;
+import org.junit.Before;
 
 public class AccountRepositoryImplTest {
 
@@ -8,7 +13,7 @@ public class AccountRepositoryImplTest {
     private Account account;
 
     private Account getSavedCourse() {
-        Set<Account> savedAccounts = this.repository.getAll();
+        Set<Account> savedAccount = this.repository.getAll();
         return savedAccounts.iterator().next();
     }
 
